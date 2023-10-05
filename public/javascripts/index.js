@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('hamburger-menu');
-const navMenu = document.querySelector('mainNav');
+const menuIcon = document.querySelector('menu-icon');
+const navMenu = document.querySelector('nav-menu-hide');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList('hide');
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('hide');
 });
