@@ -1,4 +1,21 @@
 <%- include('header') -%>
 
-    hello fff
+<div class="bottom-section">
+    <div>
+        <form id="getinvolved" action="/action_page.php">
+            <fieldset class="getinvolved">
+                <legend>Let's work together:</legend>
+                <label for="first_name">First name:</label required><br>
+                <input type="text" id="first_name" name="first_name" value="John"><br>
+                <label for="last_name">Last name:</label required><br>
+                <input type="text" id="last_name" name="last_name" value="Doe"><br>
+                <label for="email">Email:</label required><br>
+                <input type="email" id="email" name="email" value="johnny_smith@hotmail.com"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>    
+
+
+
     <%- include('footer') -%>
