@@ -264,3 +264,26 @@ p {
 .social-list__link {
   padding: 0.5em;
 }
+
+
+/* Portfolio */
+
+.my-work {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.portfolio__item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
