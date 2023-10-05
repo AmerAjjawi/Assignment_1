@@ -1,4 +1,26 @@
 
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+
+body {
+  background-color: #000;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* header */
 #header {
   width: 100px;
@@ -11,13 +33,12 @@
 }
 
 /* Nav */
-#mainNav {
-  overflow: hidden;
-  background-color: #f1f1f1;
+.navbar {
   padding: 20px 10px;
   display: flex;
-  justify-content: center; 
+  justify-content: space-between; 
   text-align: center;
+
  }
  
 li {
@@ -27,12 +48,9 @@ li {
 }
 
 
-
-
- img.center {
+ .logo img {
   width: auto;
   height: 90px;
-  position: absolute;
   padding: 10px;
 
 }
@@ -40,7 +58,7 @@ li {
 a, a:after, a:visited {
   padding: 50px;
   text-decoration: none;
-  color: #0c0d0e;
+  color: #fdfeff;
   font-family: sans-serif, 'Times New Roman', Times, serif;
   font-size: medium; 
   font-weight: bold;
@@ -48,41 +66,40 @@ a, a:after, a:visited {
 }
 
 
-body {
-  background-color: #000;
-  text-rendering: optimizeLegibility;
-  vertical-align: baseline;
-  font: calc(1em + 1vw);
+.home-content {
+  display: flex;
 }
 
-
+.home-content .bg-photo {
+  flex: 0 0 50%;
+}
 
  /* Div Class Name Welcome H1 Tags */
 .word-1:after {
-  content: 'Hello.';
+  content: 'HELLO.';
   color: rgba(250, 251, 251, 0.99);
 
 }
 
 .word-1:hover:after {
- content: 'Home';
+ content: 'HOME';
  color: rgba(248, 0, 0, 0.99);
 
 }
 
 .word-2:after {
-  content: 'I am';
+  content: 'I AM';
   color: rgba(250, 0, 0, 0.99);
 
 }
 
 .word-2:hover:after {
- content:'about';
+ content:'ABOUT';
  color: rgba(246, 247, 247, 0.99);
 }
 
 .word-3:after {
-  content: 'Amer Ajjawi';
+  content: 'AMER AJJAWI';
   color: rgba(255, 0, 0, 0.99);
 
 }
@@ -95,6 +112,10 @@ body {
 
 
 
+p {
+ color: #fdfeff;
+ font-size: 20px;
+}
 
 /* Transition of H1 elements in Div Class Name Welcome */
 .welcome {
@@ -107,7 +128,22 @@ body {
 
 /* Background Image */
 .bg-photo {
-  z-index: -9;
   position: fixed;
-  background-image: url(/images/me.jpg)
+  width: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
+
+.bg-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -- Hamburger */ 
+.hamburger-menu{ 
+  padding-right: 1.5rem; 
+  cursor: pointer; 
+} 
