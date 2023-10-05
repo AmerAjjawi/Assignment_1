@@ -22,54 +22,92 @@
  
 li {
   padding: 5px;
-  list-style-type: disc;
   list-style: none;
+
 }
 
 
- img .logo {
-  margin: auto;
+
+
+ img.center {
   width: auto;
   height: 90px;
+  position: absolute;
+  padding: 10px;
+
+}
+
+a, a:after, a:visited {
+  padding: 50px;
+  text-decoration: none;
+  color: #0c0d0e;
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+  font-size: medium; 
+  font-weight: bold;
+  cursor: pointer;
 }
 
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  font: calc(1em + 1vw);
 }
 
-a {
-  color: #00B7FF;
-}
+
 
  /* Div Class Name Welcome H1 Tags */
 .word-1:after {
   content: 'Hello.';
+  color: rgba(250, 251, 251, 0.99);
+
 }
 
 .word-1:hover:after {
  content: 'Home';
+ color: rgba(248, 0, 0, 0.99);
+
 }
 
 .word-2:after {
-  content: 'I am.';
+  content: 'I am';
+  color: rgba(250, 0, 0, 0.99);
+
 }
 
 .word-2:hover:after {
  content:'about';
+ color: rgba(246, 247, 247, 0.99);
 }
 
 .word-3:after {
-  content: 'Amer Ajjawi.';
+  content: 'Amer Ajjawi';
+  color: rgba(255, 0, 0, 0.99);
+
 }
 
 .word-3:hover:after {
  content: 'contact';
+ color: rgba(255, 255, 255, 0.99);
+
 }
 
+
+
+
 /* Transition of H1 elements in Div Class Name Welcome */
-.name .welcome {
+.welcome {
+  font-size: 1cm;
+  line-height: 2;
   margin-left: 40px;
   transition: all cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation-fill-mode: backwards;
+}
+
+/* Background Image */
+.bg-photo {
+  z-index: -9;
+  position: fixed;
+  background-image: url(/images/me.jpg)
 }
