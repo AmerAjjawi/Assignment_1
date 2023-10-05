@@ -1,0 +1,23 @@
+.header, img {
+  margin: auto;
+  width: auto;
+  height: 90px;
+}
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.word-1:after {
+  content: 'Test';
+}
+
+.word-1:hover:after {
+ content: "hi";
+}
