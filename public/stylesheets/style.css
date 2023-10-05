@@ -70,6 +70,13 @@ a {
   text-align: center;
 
  }
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-right: 2rem;
+}
  
 li {
   padding: 5px;
@@ -86,7 +93,6 @@ li {
 }
 
 a, a:after, a:visited {
-  padding: 50px;
   text-decoration: none;
   color: #fdfeff;
   font-family: sans-serif, 'Times New Roman', Times, serif;
@@ -95,6 +101,12 @@ a, a:after, a:visited {
   cursor: pointer;
 }
 
+main {
+  min-height: calc(100vh - 120px - 137px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .home-content {
   display: flex;
@@ -150,10 +162,18 @@ p {
 /* Transition of H1 elements in Div Class Name Welcome */
 .welcome {
   font-size: 1cm;
-  line-height: 2;
+  line-height: 2.25em;
   margin-left: 40px;
   transition: all cubic-bezier(0.2, 0.6, 0.2, 1);
   animation-fill-mode: backwards;
+}
+
+.welcome h1:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  line-height: 1.5;
 }
 
 /* Background Image */
@@ -193,6 +213,11 @@ p {
   animation-fill-mode: backwards;
 }
 
+.about img {
+  width: 200px;
+  height: auto;
+}
+
 
 .about-me img {
   width: 100%;
@@ -225,17 +250,16 @@ p {
 /* footer */
 
 .footer {
-  background: black;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 1em 0;
   font-size: var(--fs-h3);
 }
 
 .footer a {
   color: inherit;
   text-decoration: none;
-  
+  padding: 10px;
 }
 
 .footer__link {
@@ -256,7 +280,7 @@ p {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 0.5em 0 0;
   padding: 0;
 }
 
@@ -272,7 +296,6 @@ p {
 /* Portfolio */
 
 .my-work {
-  background: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
 }
@@ -281,14 +304,21 @@ p {
 .portfolio {
   display: flex;
   flex-direction: row;
-  max-width: 600px;
-  
   margin: 0 auto;
+  gap: 1rem
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* My services */
@@ -343,4 +373,35 @@ p {
   .service {
       flex: 110;
   }
+}
+
+/* Contact */
+fieldset {
+  text-align: center;
+  border-style: none;
+}
+
+.getinvolved {
+  color: rgb(244, 230, 230);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+label {
+  color: rgb(244, 230, 230);
+  font-size: 14px;
+  font-weight: normal;
+
+}
+
+
+.bottom-section {
+
+  padding: 2rem 1rem;
+}
+
+.btn {
+  padding: 4px;
+  margin: 10px;
+  
 }
